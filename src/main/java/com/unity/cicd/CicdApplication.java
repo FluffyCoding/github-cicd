@@ -16,7 +16,8 @@ public class CicdApplication {
 
 	@GetMapping(path = "/hello")
 	public String message(){
-		return "HELLO GITHUB CICD";
+		int rand = (int) (Math.random()*500)+1;
+		return "HELLO GITHUB CICD V2 " + rand;
 	}
 
 }
